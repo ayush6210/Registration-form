@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+<div class="container" onclick="openPopup()" >
+    <h1>Student Registration Form &nbsp;</h1>
+    <div class="calculator">
+  <form id="registration-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="roll">Roll Number :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="College">College Name:</label>
+    <input type="text" id="name" name="name" required>
+    <input type="submit" value="submit" onclick="SayHello()" >
+</div>
+<!-- <center>
+<div class="popup" onclick="closePopup()">
+<img src="tick.png">
+<h2>Thank You !</h2>
+<p>Your details has been succesfully submitted, Thanks ! </p>
+<input type="submit" value="OK">
+</div>
+</center> -->
+</div>
+  <script src="script.js">
+    let popup = document.getElementById("popup");
+    function openPopup(){
+      popup.classList.add("open-popup");
+
+    }
+    function closePopup(){
+      popup.classList.remove("open-popup");
+      
+    }
+  
+  </script>
+</body>
+</html>
